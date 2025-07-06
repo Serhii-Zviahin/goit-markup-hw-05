@@ -405,38 +405,35 @@
 
   <div class="modal-overlay">
     <div class="modal-content">
+      <button type="button" class="modal-close-btn">типа Х</button>
       <p class="title-modal">Leave your contacts and we will call you back</p>
       <form action="">
         <fieldset class="pop-up-field">
-          <label>Name
-            <input type="name">
-          </label>
+          <label for="name">Name </label>
+          <input type="text" name="name" id="name">
         </fieldset>
 
         <fieldset class="pop-up-field">
-          <label>Phone
-            <input type="tel" name="phone">
-          </label>
+          <label for="phone">Phone </label>
+          <input type="tel" name="phone" id="phone">
         </fieldset>
 
         <fieldset class="pop-up-field">
-          <label>Email
-            <input type="email" name="email">
-          </label>
+          <label for="email">Email </label>
+          <input type="email" name="email" id="email">
         </fieldset>
 
-        <fieldset> class="pop-up-field">
-          <label>Comment
-            <input type="text">
-          </label>
+        <fieldset class="pop-up-field">
+          <label for="comment">Comment </label>
+          <textarea name="comment" rows="6" id="comment"></textarea>
         </fieldset>
 
         <fieldset class="pop-up-field">
           <input type="checkbox" id="checkbox" class="checkbox" />
-          <label for="checkbox">I accept the terms and conditions of the <span class="Privacy">Privacy Policy</span>
+          <label for="checkbox">I accept the terms and conditions of the <span class="privacy">Privacy Policy</span>
           </label>
         </fieldset>
-        <button type="submit">Send</button>
+        <button type="submit" class="modal-submit-btn">Send</button>
       </form>
 
     </div>
