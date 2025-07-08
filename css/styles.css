@@ -583,6 +583,23 @@ input#footer-email {
   height: 24px;
   transform: translateY(-10%);
 }
+.icon-phone {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-10%);
+}
+.icon-email {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-10%);
+}
+
 .pop-up-field label {
   font-weight: 400;
   font-size: 12px;
@@ -599,6 +616,20 @@ input#footer-email {
   height: 40px;
 }
 
+/* Optional: Add custom styles for focus-visible state */
+.pop-up-field input:focus-visible {
+  outline: none;
+}
+.pop-up-field input:hover + .icon-person,
+.pop-up-field input:active + .icon-person,
+.pop-up-field input:focus + .icon-person {
+  fill: #4d5ae5;
+}
+.pop-up-field input:hover,
+.pop-up-field input:active,
+.pop-up-field input:focus {
+  border-color: #4d5ae5;
+}
 .pop-up-field .checkbox {
   position: absolute;
   opacity: 0;
