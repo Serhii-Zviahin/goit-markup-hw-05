@@ -31,7 +31,13 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
+section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .header {
+  max-width: 1440px;
+  margin: 0 auto;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -138,9 +144,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
   padding: 188px 0;
-  margin: 0 auto;
 }
 .section-one .container {
   display: flex;
@@ -393,6 +397,8 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .footer-container {
   display: flex;
@@ -459,9 +465,12 @@ img {
 .footer-email-submit {
   display: flex;
   /* flex-direction: column; */
-  align-items: center;
+  align-items: flex-end;
   gap: 16px;
   margin-left: 80px;
+}
+input#footer-email {
+  margin-top: 16px;
 }
 .footer-email-label {
 }
@@ -492,6 +501,23 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+.footer-email-submit input {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: #2e2f42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.footer-email-submit input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  /* line-height: 24px; */
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
 .icon-flight-send {
   fill: #ffffff;
 }
@@ -510,8 +536,8 @@ img {
   align-items: center;
   z-index: 999;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  pointer-events: none;
+  /* opacity: 0;
+  pointer-events: none; */
 }
 .modal-overlay.is_open {
   opacity: 1;
@@ -547,6 +573,15 @@ img {
   gap: 4px;
   border: none;
   margin-bottom: 8px;
+  position: relative;
+}
+.icon-person {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-10%);
 }
 .pop-up-field label {
   font-weight: 400;
@@ -563,6 +598,7 @@ img {
   width: 360px;
   height: 40px;
 }
+
 .pop-up-field .checkbox {
   position: absolute;
   opacity: 0;
