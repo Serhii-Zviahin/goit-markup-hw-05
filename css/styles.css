@@ -564,6 +564,12 @@ input#footer-email {
   position: absolute;
   top: 24px;
 }
+.modal-close-btn:hover {
+  background-color: #404bbf;
+}
+.modal-close-btn:hover svg {
+  fill: #ffffff;
+}
 .title-modal {
   font-weight: 500;
   font-size: 16px;
@@ -626,9 +632,32 @@ input#footer-email {
   height: 40px;
   padding-left: 38px;
 }
+.pop-up-field #comment {
+  width: auto;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding-left: 16px;
+  padding-top: 8px;
+}
+.pop-up-field #comment::placeholder {
+  padding-left: 16px;
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
 
 /* Add custom styles for focus-visible state */
-.pop-up-field input:focus-visible {
+.pop-up-field input:focus-visible,
+.pop-up-field #comment:focus-visible {
   outline: none;
 }
 .pop-up-field input:hover + .icon-person,
@@ -648,7 +677,10 @@ input#footer-email {
 }
 .pop-up-field input:hover,
 .pop-up-field input:active,
-.pop-up-field input:focus {
+.pop-up-field input:focus,
+.pop-up-field #comment:hover,
+.pop-up-field #comment:active,
+.pop-up-field #comment:focus {
   border-color: #4d5ae5;
 }
 
@@ -725,8 +757,4 @@ input#footer-email {
   text-align: center;
   color: #ffffff;
   margin-top: 24px;
-}
-.pop-up-field #comment {
-  width: auto;
-  resize: none;
 }
