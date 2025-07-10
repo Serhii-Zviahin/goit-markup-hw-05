@@ -718,46 +718,21 @@ section {
   fill: #f4f4fd;
 }
 
-/* 
-
-
-.checkbox-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  fill: none;
-}
-
-.checkbox-text {
-  margin-left: 24px;
-  font-weight: 400;
-  font-size: 12px;
-
-  /* line-height: 14px; */
-/* line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-} */
 .privacy-link {
-  /* line-height: 16px; */
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
   padding-left: 5px;
 }
-*/
 
 /* CustomCheckbox в input end */
 
-.modal-submit-btn {
+.modal-content .modal-submit-btn {
   display: block;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   border-radius: 4px;
   border: none;
-  /* padding: 16px 32px; */
   min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -765,7 +740,6 @@ section {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
