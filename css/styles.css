@@ -691,6 +691,7 @@ section {
 
 .pop-up-checkbox {
   margin-bottom: 24px;
+  position: relative;
 }
 
 .label-accept-privacy {
@@ -698,6 +699,10 @@ section {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
 }
 .checkmark {
   width: 16px;
@@ -712,18 +717,26 @@ section {
   justify-content: center;
   fill: transparent;
 }
-.pop-up-field .checkbox:checked + .label-accept-privacy .checkmark {
+.checkbox:checked + .label-accept-privacy .checkmark {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
+.checkbox-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  fill: none;
+}
+
 .privacy-link {
-  line-height: 1.33333;
+  line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-  padding-left: 5px;
 }
 
 /* CustomCheckbox в input end */
