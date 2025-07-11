@@ -650,7 +650,9 @@ section {
   display: block;
   margin-bottom: 4px;
 }
-
+.pop-up-field-comment {
+  margin-bottom: 16px;
+}
 .pop-up-field-comment-text {
   width: 100%;
   height: 120px;
