@@ -603,7 +603,7 @@ section {
   margin-bottom: 16px;
 }
 .pop-up-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .pop-up-field-input {
   position: relative;
@@ -623,40 +623,20 @@ section {
   border-color: #4d5ae5;
 }
 
-.icon-person {
+.icon-person-info {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pop-up-field-input-text:hover + .icon-person,
-.pop-up-field-input-text:active + .icon-person,
-.pop-up-field-input-text:focus + .icon-person,
-.pop-up-field-input-text:hover + .icon-phone,
-.pop-up-field-input-text:active + .icon-phone,
-.pop-up-field-input-text:focus + .icon-phone,
-.pop-up-field-input-text:hover + .icon-email,
-.pop-up-field-input-text:active + .icon-email,
-.pop-up-field-input-text:focus + .icon-email,
+.pop-up-field-input-text:hover + .icon-person-info,
+.pop-up-field-input-text:active + .icon-person-info,
+.pop-up-field-input-text:focus + .icon-person-info,
 .pop-up-field-input-text:hover,
 .pop-up-field-input-text:active,
 .pop-up-field-input-text:focus {
   fill: #4d5ae5;
-}
-.icon-phone {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-email {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pop-up-field-label {
